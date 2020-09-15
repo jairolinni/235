@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/labelVolumeOfSphere"
+        style="@style/TextStyle"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Volume of Sphere:" />
+    <TextView
+        android:id="@+id/labelRadius"
+        style="@style/TextStyle"
+        android:text="Radius:"
+        android:layout_below="@id/labelVolumeOfSphere"
+        android:layout_alignLeft="@id/labelVolumeOfSphere"
+        />
+
+    <EditText
+        android:id="@+id/etRadius"
+        style="@style/TextStyle"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@id/labelRadius"
+        android:layout_toEndOf="@id/labelRadius"
+        android:hint="Radius"
+     />
+    <Button
+        android:id="@+id/ButtonCalc"
+        style="@style/TextStyle"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/labelRadius"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:onClick="calculate"
+        android:text="Calculate Solution"
+        />
+    <TextView
+        android:id="@+id/labelAnswer"
+        style="@style/TextStyle"
+        android:layout_marginTop="25dp"
+        android:text="The volume of the spear is:"
+        android:layout_below="@id/ButtonCalc"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+
+        />
+    <TextView
+        android:id="@+id/solution"
+        style="@style/TextStyle"
+        android:layout_below="@id/labelAnswer"
+        android:layout_centerHorizontal="true"
+        android:text="solution"
+
+        />
+</RelativeLayout>
